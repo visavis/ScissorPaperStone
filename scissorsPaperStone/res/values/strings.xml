@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">scissors  paper stone</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="header">Welcome to halle androo project</string>
+    <string name="clue_1">Choose your weapon.</string>
+    <string name="paper">Paper</string>
+    <string name="scissors">Scissors</string>
+    <string name="stone">Stone</string>
+    <string name="mode">easy</string>
+    <string name="quit">Quit</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="up_btn">back</string>
+    <string name="first_name_placeholder">Fist name</string>
+    <string name="last_name_placeholder">Last name</string>
+    <string name="user_info">User Info</string>
+    <string name="u_weap_header">Your Weapon</string>
+    <string name="winner_header">Winner</string>
+    <string name="dev_weap_header">My weapon</string>
+
+
+</resources>

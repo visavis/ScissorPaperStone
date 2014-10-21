@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.elcoo.scissorsstonepaper.MainActivity" >
+
+    <TextView
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/header"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/results_u_weapon_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/h2_choose_weapon"
+        android:layout_below="@+id/h2_choose_weapon"
+        android:text="@string/u_weap_header"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/results_u_weapon_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_scissors"
+        android:layout_alignLeft="@+id/results_u_weapon_header"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/results_dev_weapon_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_paper"
+        android:layout_alignRight="@+id/results_dev_weapon_header"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_stone"
+        android:text="@string/scissors" />
+
+    <Button
+        android:id="@+id/btn_stone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/stone" />
+
+    <Button
+        android:id="@+id/btn_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/btn_stone"
+        android:text="@string/paper" />
+
+    <TextView
+        android:id="@+id/results_winner_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/results_u_weapon_header"
+        android:layout_alignBottom="@+id/results_u_weapon_header"
+        android:layout_centerHorizontal="true"
+        android:text="@string/winner_header"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/results_dev_weapon_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/results_winner_header"
+        android:layout_alignBottom="@+id/results_winner_header"
+        android:layout_alignRight="@+id/h1"
+        android:text="@string/dev_weap_header"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/h2_choose_weapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/h1"
+        android:layout_below="@+id/h1"
+        android:layout_marginTop="21dp"
+        android:text="@string/clue_1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/results_winner_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_stone"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btn_user_info"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="@string/user_info" />
+
+</RelativeLayout>
