@@ -2,20 +2,18 @@ package com.elcoo.scissorsstonepaper;
 
 import java.util.Random;
 
-import com.elcoo.scissorsstonepaper.MainActivity;
-
 
 public class Game {
 	private String currentUserWeapon;
-	private String currentDevWeapon;
+	private String currentDevWeapon = "stone";	
 	private int currentWinner;
+	private String result;
 	
 	public void playTurn( String weapon ){
 		this.currentUserWeapon = weapon;
 		this.currentWinner = findWinner(currentUserWeapon, currentDevWeapon);
-		String printedWinner = printResult(currentWinner);
-		MainActivity.setResultHeader(currentUserWeapon, printedWinner, currentDevWeapon);
-		this.currentDevWeapon = getDevWeapon();
+		this.result = printResult(currentWinner);
+		this.currentDevWeapon = newDevWeapon();
 	}
 	
 	private int findWinner(String userWeapon, String devWeapon){
@@ -59,7 +57,7 @@ public class Game {
 		return output;
 	}
 	
-	private String getDevWeapon(){
+	private String newDevWeapon(){
 		Random cGen = new Random();
 		int weapon = cGen.nextInt(3) + 1;
 		String dWeapon = "";
@@ -79,5 +77,17 @@ public class Game {
 	
 	public void setDevWeapon(String weapon){
 		this.currentDevWeapon = weapon;
+	}
+	
+	public String getDevWeapon(){
+		return this.currentDevWeapon;
+	}
+	
+	public String getUserWeapon(){
+		return this.currentUserWeapon;
+	}
+	
+	public String getResult(){
+		return this.result;
 	}
 }

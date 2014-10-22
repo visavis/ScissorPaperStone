@@ -55,6 +55,7 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {				
 				currentGame.playTurn(scissors);
+				setResultHeader(currentGame.getUserWeapon(), currentGame.getResult(), currentGame.getDevWeapon());
 			}
 		});
 		
@@ -62,6 +63,7 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {				
 				currentGame.playTurn(stone);
+				setResultHeader(currentGame.getUserWeapon(), currentGame.getResult(), currentGame.getDevWeapon());
 			}
 		});
 		
@@ -69,6 +71,7 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {				
 				currentGame.playTurn(paper);
+				setResultHeader(currentGame.getUserWeapon(), currentGame.getResult(), currentGame.getDevWeapon());
 			}
 		});
 	}
@@ -93,9 +96,12 @@ public class MainActivity extends ActionBarActivity {
 	}
 	
 	public static void setResultHeader(String uWeapon, String result, String dWeapon) {
-		userWeapon.setText(uWeapon);
-		winner.setText(result);
-		devWeapon.setText(dWeapon);
+		if ( uWeapon != null && result != null && dWeapon != null ) {
+			userWeapon.setText(uWeapon);
+			winner.setText(result);
+			devWeapon.setText(dWeapon);
+		}
+		
 		
 	}
 }
