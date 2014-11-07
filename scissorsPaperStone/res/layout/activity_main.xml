@@ -28,48 +28,6 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
-        android:id="@+id/results_u_weapon_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_scissors"
-        android:layout_alignLeft="@+id/results_u_weapon_header"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/results_dev_weapon_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_paper"
-        android:layout_alignRight="@+id/results_dev_weapon_header"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/btn_scissors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/btn_stone"
-        android:text="@string/scissors" />
-
-    <Button
-        android:id="@+id/btn_stone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/stone" />
-
-    <Button
-        android:id="@+id/btn_paper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/btn_stone"
-        android:text="@string/paper" />
-
-    <TextView
         android:id="@+id/results_winner_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -99,15 +57,6 @@
         android:text="@string/clue_1"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <TextView
-        android:id="@+id/results_winner_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_stone"
-        android:layout_centerHorizontal="true"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textSize="35sp" />
-
     <Button
         android:id="@+id/btn_user_info"
         style="?android:attr/buttonStyleSmall"
@@ -117,5 +66,71 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="18dp"
         android:text="@string/user_info" />
+
+    <TextView
+        android:id="@+id/console_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_user_info"
+        android:layout_alignRight="@+id/results_dev_weapon_value"
+        android:layout_toLeftOf="@+id/btn_user_info"
+        android:text="@string/data_output" />
+
+    <Button
+        android:id="@+id/btn_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/console_output"
+        android:layout_marginBottom="29dp"
+        android:layout_toRightOf="@+id/btn_user_info"
+        android:text="@string/paper" />
+
+    <Button
+        android:id="@+id/btn_stone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_paper"
+        android:layout_alignBottom="@+id/btn_paper"
+        android:layout_centerHorizontal="true"
+        android:text="@string/stone" />
+
+    <Button
+        android:id="@+id/btn_scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_stone"
+        android:layout_alignBottom="@+id/btn_stone"
+        android:layout_toLeftOf="@+id/btn_user_info"
+        android:text="@string/scissors" />
+
+    <TextView
+        android:id="@+id/results_u_weapon_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/results_u_weapon_header"
+        android:layout_below="@+id/results_u_weapon_header"
+        android:text="@string/u_weapon_value"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/results_dev_weapon_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/results_dev_weapon_header"
+        android:layout_below="@+id/results_dev_weapon_header"
+        android:text="@string/dev_weapon_value"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/results_winner_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/results_u_weapon_value"
+        android:layout_centerHorizontal="true"
+        android:text="@string/result_value"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="35sp" />
 
 </RelativeLayout>

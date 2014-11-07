@@ -20,6 +20,10 @@
     <string name="u_weap_header">Your Weapon</string>
     <string name="winner_header">Winner</string>
     <string name="dev_weap_header">My weapon</string>
+    <string name="u_weapon_value">Yours</string>
+    <string name="result_value">winner</string>
+    <string name="dev_weapon_value">mine</string>
+    <string name="data_output">console...</string>
 
 
 </resources>

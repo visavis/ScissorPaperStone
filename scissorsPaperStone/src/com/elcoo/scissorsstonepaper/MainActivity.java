@@ -15,6 +15,7 @@ public class MainActivity extends ActionBarActivity {
 	
 	TextView h1;
 	TextView h2ChooseWeapon;
+	TextView console;
 	Button btnScissors;
 	Button btnStone;
 	Button btnPaper;
@@ -42,6 +43,7 @@ public class MainActivity extends ActionBarActivity {
 		
 		h1 = (TextView) findViewById(R.id.h1);
 		h2ChooseWeapon = (TextView) findViewById(R.id.h2_choose_weapon);
+		console = (TextView) findViewById(R.id.console_output);
 		btnScissors = (Button) findViewById(R.id.btn_scissors);
 		btnStone = (Button) findViewById(R.id.btn_stone);
 		btnPaper = (Button) findViewById(R.id.btn_paper);
@@ -54,7 +56,7 @@ public class MainActivity extends ActionBarActivity {
 		btnScissors.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {				
-				currentGame.playTurn(scissors);
+				currentGame.playTurn(scissors, console);
 				setResultHeader(currentGame.getUserWeapon(), currentGame.getResult(), currentGame.getDevWeapon());
 			}
 		});
@@ -62,7 +64,7 @@ public class MainActivity extends ActionBarActivity {
 		btnStone.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {				
-				currentGame.playTurn(stone);
+				currentGame.playTurn(stone, console);
 				setResultHeader(currentGame.getUserWeapon(), currentGame.getResult(), currentGame.getDevWeapon());
 			}
 		});
@@ -70,7 +72,7 @@ public class MainActivity extends ActionBarActivity {
 		btnPaper.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {				
-				currentGame.playTurn(paper);
+				currentGame.playTurn(paper, console);
 				setResultHeader(currentGame.getUserWeapon(), currentGame.getResult(), currentGame.getDevWeapon());
 			}
 		});
